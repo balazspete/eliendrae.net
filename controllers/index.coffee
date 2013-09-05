@@ -13,7 +13,7 @@ class Controller
 
   _renderPage: (res, page, model) ->
     res.locals = model
-    res.locals['pageToRender'] = "#{page}View"
+    res.locals['PAGE_TO_RENDER'] = "#{page}View"
     res.render 'BaseView'
 
   VERB = (method, req, res) =>
