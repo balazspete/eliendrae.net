@@ -1,13 +1,13 @@
 Controller = require "./index"
+Model = require "#{__dirname}/../models/index"
 
 class HomeController extends Controller
 
-  _setup: =>
-    @model = {}
+  _setup: ->
+    @model = new Model()
 
-  get: (req, res) =>
-    console.log @
-    @_renderPage res, 'Home', {}
-
+  _get: (req, res) =>
+    @model.setBody "Home"
+    @_renderPage res
 
 module.exports = HomeController

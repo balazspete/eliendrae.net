@@ -38,5 +38,4 @@ class Model
   _getViewProperty: (property) =>
     @_viewProperties[property]
 
-
 module.exports = Model

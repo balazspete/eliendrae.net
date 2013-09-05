@@ -4,5 +4,3 @@ getController = (name) ->
   new controller()
 
 app.get '/', getController("Home").get
-
-

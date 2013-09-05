@@ -11,11 +11,14 @@ app.engine 'html', require('hbs').__express
 viewsPath = "#{__dirname}/../views"
 hbs.registerPartials "#{viewsPath}/partials"
 
-templates = {}
-for controller in fs.readdirSync(viewsPath) when _str.endsWith(controller, ".html")
-  template = hbs.handlebars.compile fs.readFileSync("#{viewsPath}/#{controller}", "utf8")
-  templates[controller.substring(0, controller.indexOf(".html"))] = template
+hbs.registerHelper "include", (templateName, options) ->
+  if /^[A-Z].*/.test templateName
+    path = "#{viewsPath}/#{templateName}View.html"
+  else
+    path = "#{viewsPath}/partials/#{templateName}.html"
 
-hbs.registerHelper "include", (partial, options) ->
-  model = _.extend {}, this, options
-  new hbs.SafeString (template for name, template of templates when name is partial)[0](model)
+  if fs.existsSync path
+    model = _.extend {}, this, options
+    template = hbs.handlebars.compile fs.readFileSync(path, "utf8")
+    return new hbs.SafeString template(model) if template
+  ""
