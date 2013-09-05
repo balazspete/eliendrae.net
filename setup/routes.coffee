@@ -1,6 +1,6 @@
 
 getController = (name) ->
-  controller = require("./controllers/#{name}Controller")
+  controller = require("#{__dirname}/../controllers/#{name}Controller")
   new controller()
 
 app.get '/', getController("Home").get

@@ -3,7 +3,8 @@ global.app = express()
 
 global.config = require "./config"
 
-require "./routes"
+require "./setup/index"
+
 
 
 
