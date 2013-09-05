@@ -11,10 +11,16 @@ class Controller
   _setup: ->
     @model = {}
 
+  _renderPage: (res, page, model) ->
+    res.locals = model
+    res.locals['pageToRender'] = "#{page}View"
+    res.render 'BaseView'
+
   VERB = (method, req, res) =>
     try
       @["_#{method}"](req, res)
     catch e
       res.send e.message ? "Error"
+
 
 module.exports = Controller

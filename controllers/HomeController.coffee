@@ -2,11 +2,12 @@ Controller = require "./index"
 
 class HomeController extends Controller
 
-  _setup: ->
+  _setup: =>
     @model = {}
 
-  get: (req, res) ->
-    res.send "home"
+  get: (req, res) =>
+    console.log @
+    @_renderPage res, 'Home', {}
 
 
 module.exports = HomeController
