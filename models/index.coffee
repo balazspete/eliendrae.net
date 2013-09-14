@@ -9,6 +9,16 @@ class Model
       body: ""
       head: "head"
       bodyOptions: ""
+      navbar: [
+        {
+          text: "About"
+          url: "/about/"
+        }
+        {
+          text: "Projects"
+          url: "/projects/"
+        }
+      ]
 
     for key, value of @_viewProperties
       k = _str.capitalize(key)

@@ -22,3 +22,12 @@ hbs.registerHelper "include", (templateName, options) ->
     template = hbs.handlebars.compile fs.readFileSync(path, "utf8")
     return new hbs.SafeString template(model) if template
   ""
+
+hbs.registerHelper "createMainNavbar", (structure) ->
+  content = ""
+  for element in structure
+    continue unless element.url
+    content += "<li"
+    content += " class='active'" if element.active
+    content += "><a href='#{element.url ? ""}'>#{element.text ? element.url}</a></li>"
+  new hbs.SafeString content
