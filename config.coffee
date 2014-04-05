@@ -1,3 +1,3 @@
 
 module.exports =
-    httpPort: process.env.PORT || 3000
+    httpPort: 8080
