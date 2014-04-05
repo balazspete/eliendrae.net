@@ -1,0 +1,51 @@
+
+{{> header}}
+<div id="name" class="eli_section">
+    <div class="container jumbotron centered">
+        <div>
+            <img class="profile-image main" src="/static/profile-image.png">
+        </div>
+        <h3>Balázs Pete <p><small>@eliendrae</small></p></h3> 
+    </div>
+</div>
+<div id="education" class="eli_section">
+    <div class="container jumbotron">
+        <h3>Education</h3>
+        <p><strong>Current:</strong> MSc in Computer Science, Mobile and Ubiquitous Computing <em><small>@Trinity College Dublin</small></em></p>
+        <p>BSc in Computer Science <em><small>@University College Dublin</small></em></p>
+        <p>International Baccalaureate, Leaving Certificate <em><small>@St Andrews College, Dublin</small></em></p>
+    </div>
+</div>
+<div id="skills" class="eli_section">
+    <div class="container jumbotron">
+        <h3>Skills</h3>
+        <p>
+            {{#each skills}}
+                <span class="{{class}}">{{name}}</span>
+            {{/each}}
+        </p>
+    </div>
+</div>
+<div id="employment" class="eli_section">
+    <div class="container jumbotron">
+        <h3>Employment</h3>
+        <p>Intern - Software Development Engineer <em><small>@ServiceFrame Limited, NovaUCD, Belfield</small></em></p>
+        <p>Intern - Solutions Analyst <em><small>@ServiceFrame Limited, NovaUCD, Belfield</small></em></p>
+        <p>Intern (Research in Multi Agent Systems) <em><small>@School of Computer Science, University College Dublin</small></em></p>
+    </div>
+</div>
+<div id="responsibilities" class="eli_section">
+    <div class="container jumbotron">
+        <h3>Societies and Responsibilities</h3>
+        <p>Class and School Representative <em><small>@Trinity College Dublin Graduate Students’ Union</small></em></p>
+        <p>Auditor <em><small>@UCD Netsoc (Internet and Computer Science Society)</small></em></p>
+        <p>Webmaster <em><small>@UCD Science Society</small></em></p>
+    </div>
+</div>
+<div id="achievements" class="eli_section">
+    <div class="container jumbotron">
+        <h3>Achievements</h3>
+        <p>Member <em><small>Team UCD in the 2012 NWERC</small></em></p>
+        <p>Winner <em><small>UCD CSI Programming Competition 2012</small></em></p>
+    </div>
+</div>

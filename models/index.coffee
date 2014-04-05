@@ -36,6 +36,9 @@ class Model
       viewOptions["__#{_key}__"] = value
     _.extend @model, viewOptions
 
+  add: (key, value) ->
+    @model[key] = value
+
   # Implement this method to add post contructor logic
   _setup: ->
     @model = {}

@@ -48,6 +48,10 @@ body {
 	}
 }
 
+.centered {
+	text-align: center;
+}
+
 a {
 	color: @link-color;
 }
@@ -56,11 +60,43 @@ a {
 	color: @section-inverse-text-color;
 }
 
-#name {
+.profile-image {
+	border-radius: 100pc;
+	&.main {
+		height: 8em;
+	}
+}
+
+span {
+	&.big {
+		font-size: 1.5em;
+	}
+	&.medium {
+		font-size: 1em;
+	}
+	&.small {
+		font-size: 0.7em;
+	}
+}
+
+#education, #employment, #achievements {
+	background-color: #ECF0F1;
+}
+
+#name, #skills, #responsibilities, #error {
 	background-color: #22313F;
 	color: @section-inverse-text-color;
 }
 
-#education {
-	background-color: #ECF0F1;
+.About #name {
+	background-color: #000;
+	background-image: url("/static/profile-background.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#error {
+	position: fixed;
+	height: 100%;
+	width: 100%;
 }
