@@ -7,7 +7,8 @@
         "express": "3.x",
         "hbs": "2.3.x",
         "underscore": "1.5.x",
-        "underscore.string": "2.3.x"
+        "underscore.string": "2.3.x",
+        "less-middleware": "x"
     },
     "engines": {
         "node": "0.10.x",

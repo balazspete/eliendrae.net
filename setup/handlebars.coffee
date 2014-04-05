@@ -27,7 +27,7 @@ hbs.registerHelper "createMainNavbar", (structure) ->
   content = ""
   for element in structure
     continue unless element.url
-    content += "<li"
-    content += " class='active'" if element.active
-    content += "><a href='#{element.url ? ""}'>#{element.text ? element.url}</a></li>"
+    content += "<li class='nav-element"
+    content += if element.active then " active" else " inactive"
+    content += "'><a href='#{element.url ? ""}'>#{element.text ? element.url}</a></li>"
   new hbs.SafeString content

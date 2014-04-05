@@ -1,0 +1,66 @@
+
+@navbar-color: #34495E;
+@navbar-link-color-brand: #F2F1EF;
+@navbar-link-color-active: #F2F1EF;
+@navbar-link-color-inactive: #ECF0F1;
+@background: #000;
+
+@link-color: #DADFE1;
+
+@section-inverse-text-color: #BFBFBF;
+
+body {
+	background: @background;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color: transparent;
+	background-color: @navbar-color;
+	background-image: none;
+	.navbar-brand {
+		color: @navbar-link-color-brand;
+		text-shadow: none;
+	}
+}
+
+.nav-element.active > a {
+	color: @navbar-link-color-active !important;
+}
+
+.nav-element.inactive > a {
+	color: @navbar-link-color-inactive !important;
+}
+
+.eli_section {
+	.container.jumbotron {
+		background-color: transparent;
+		margin-bottom: 0px;
+
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&.warning {
+		background-color: #95A5A6;
+	}
+}
+
+a {
+	color: @link-color;
+}
+
+.inverse {
+	color: @section-inverse-text-color;
+}
+
+#name {
+	background-color: #22313F;
+	color: @section-inverse-text-color;
+}
+
+#education {
+	background-color: #ECF0F1;
+}
