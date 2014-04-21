@@ -1,6 +1,7 @@
 
 <script src="//code.jquery.com/jquery.js"></script>
 <script src="/static/bootstrap.min.js"></script>
+<script src="/static/cookiesdirective.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -10,4 +11,18 @@
 
   ga('create', 'UA-41288968-1', 'eliendrae.net');
   ga('send', 'pageview');
+
+
+  $(document).ready(function(){
+		$.cookiesDirective({
+			privacyPolicyUri: '/policies/#privacy',
+			explicitConsent: false,
+			position: 'bottom',
+			message: 'This site uses cookies to track visitors. ', 
+			linkColor: '#444444',
+			fontColor: '#444444',	
+			backgroundColor: '#95A09A',
+			backgroundOpacity: '90',
+		});
+	});
 </script>

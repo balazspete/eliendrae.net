@@ -20,5 +20,7 @@ app.use '/fonts', express.static(__dirname + '/../assets/fonts')
 app.get '/', getController("Home").get
 app.get '/about', getController("About").get
 
+app.get '/policies', getController("Policy").get
+
 app.use getController("Error").get
 
