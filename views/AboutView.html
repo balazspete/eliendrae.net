@@ -8,7 +8,7 @@
         <h3>Balázs Pete <p><small>@eliendrae</small></p></h3> 
     </div>
 </div>
-<div id="education" class="eli_section">
+<div id="aboutme" class="eli_section">
     <div class="container jumbotron">
         <h3>About me</h3>
         <p>I have an interest in mobile computing and the technologies of the future. I have a high expectation for both performance efficient and well usable systems, offering the best possible user experience.</p>
@@ -20,7 +20,7 @@
         <h3>Skills</h3>
         <p>
             {{#each skills.structure}}
-                <span class="{{class}}">{{name}}</span>
+                <a class="{{class}}" href="/projects/?{{filterquery name}}">{{name}}</a>
             {{/each}}
         </p>
     </div>
@@ -49,3 +49,14 @@
         {{eduwork achievements}}
     </div>
 </div>
+<div id="page-affix" data-spy="affix">
+    <ul class="nav">
+        <li><a href="#aboutme">About&nbsp;me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#responsibilities">Responsibilities</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+    </ul>
+</div>
+{{> footer}}

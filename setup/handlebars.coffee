@@ -2,6 +2,7 @@
 fs = require "fs"
 _ = require "underscore"
 _str = require "underscore.string"
+querystring = require 'querystring'
 
 global.hbs = require "hbs"
 
@@ -59,3 +60,7 @@ hbs.registerHelper "eduwork", (data) ->
       </div>"""
 
   new hbs.SafeString content
+
+hbs.registerHelper "filterquery", (data) ->
+  querystring.stringify {filter: data}
+

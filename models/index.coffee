@@ -9,6 +9,7 @@ class Model
       body: ""
       head: "head"
       bodyOptions: ""
+      collapse: true
       navbar: [
         {
           text: "About"
@@ -45,8 +46,8 @@ class Model
 
   _createModel: ->
 
-  _setViewProperty: (property, value) =>
-    @_viewProperties[property] = _str.capitalize(value)
+  _setViewProperty: (property, value, capitalize=true) =>
+    @_viewProperties[property] = if capitalize then _str.capitalize(value) else value
 
   _getViewProperty: (property) =>
     @_viewProperties[property]

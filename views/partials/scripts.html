@@ -24,6 +24,18 @@
 			backgroundColor: '#95A09A',
 			backgroundOpacity: '90',
 		});
-		$('.collapse').collapse();
+
+		{{#if __collapse__}}
+			$('.collapse').collapse();
+		{{/if}}
+
+		$('#page-affix').affix({
+		    offset: {
+		    	top: 100, 
+		    	bottom: function () {
+		        	return (this.bottom = $('footer').outerHeight(true));
+		    	}
+		    }
+		});
 	});
 </script>
