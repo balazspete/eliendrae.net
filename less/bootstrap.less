@@ -7,10 +7,16 @@
 
 @link-color: #DADFE1;
 
+@section-text-color: #333333;
 @section-inverse-text-color: #BFBFBF;
 
 body {
 	background: @background;
+}
+
+footer {
+	color: @section-inverse-text-color;
+	background-color: #333;
 }
 
 .navbar {
@@ -54,8 +60,6 @@ body {
 	text-align: center;
 }
 
-
-
 .inverse {
 	color: @section-inverse-text-color;
 }
@@ -79,19 +83,22 @@ span {
 	}
 }
 
-#education, #experience, #achievements, #privacy {
+.eli_section {
 	background-color: #ECF0F1;
+	a {
+		color: @section-text-color;
+	}
 }
 
-#name, #skills, #responsibilities, #error {
+.eli_section.inverse {
 	background-color: #22313F;
 	color: @section-inverse-text-color;
+	a {
+		color: @section-inverse-text-color;
+	}
 }
 
 .About #name {
-	background-image: url("/static/profile-background.png");
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 #error {
@@ -108,3 +115,31 @@ span {
 	border: 0px;
 	background-color: transparent;
 }
+
+.eduwork.collapsible {
+	p.eduwork-title, p.eduwork-subtext {
+		padding: 0px;
+		margin: 0px;
+		position: relative;
+	}
+
+	div.eduwork-body {
+		margin: 10px;
+		padding: 15px;
+		font-size: 0.7em;
+		border-left: 1px solid @section-text-color;	
+		text-align: justify;	
+	}
+
+	margin-bottom: 15px;
+}
+
+.eli_section.inverse .eduwork.collapsible p.eduwork-body {
+	border-left-color: @section-inverse-text-color;
+}
+
+.thicker-text {
+	font-weight: 400;
+}
+
+
