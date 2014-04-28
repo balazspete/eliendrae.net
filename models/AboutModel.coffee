@@ -98,6 +98,10 @@ class AboutModel extends Model
           subtext: "Trinity College Dublin Graduate Students' Union"
           date: "2013 - 2014"
           at: true
+          details: [
+            "I have represented the Mobile and Ubiquitous Computing class at Students' Union and course meetings.",
+            "I have also represented the Students' Union on several committees of the School of Computer Science and Statistics."
+          ]
         }
         {
           id: "responsabilities_netsoc"
