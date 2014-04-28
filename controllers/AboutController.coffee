@@ -55,7 +55,10 @@ class AboutController extends Controller
           description: "Software Development Engineer"
           subtext: "ServiceFrame Limited, NovaUCD, Belfield"
           date: "Summer 2013"
-          details: ["Throughout the internship, I was tasked with automating tests and set up continuous integration. Building on these, I had to implement a system, working together with another intern, capable to automatically build, test, and deploy solutions either on schedule or on demand. My other duties involved the migration of customer data from the old environment to the new version of the solution. In addition, I have gained additional experience in web development, Node.js, and unit testing."]
+          details: [
+            "Throughout the internship, I was tasked with automating tests and set up continuous integration. Building on these, I had to implement a system, working together with another intern, capable to automatically build, test, and deploy solutions either on schedule or on demand.",
+            "My other duties involved the migration of customer data from the old environment to the new version of the solution. In addition, I have gained additional experience in web development, Node.js, and unit testing."
+          ]
           at: true
         }
         {
@@ -64,7 +67,10 @@ class AboutController extends Controller
           description: "Solutions Analyst"
           subtext: "ServiceFrame Limited, NovaUCD, Belfield"
           date: "Summer 2012"
-          details: ["I have had the chance to work in a startup environment, where I worked with experts in the field of web development, working on a large scale web based data analytics tool. I was tasked with both front and back end development, including interface design and feature development. I also had the chance to design and develop some of the product’s REST API end points. I also had insight into product testing, agile development techniques and working collaboratively with team members."]
+          details: [
+            "I have had the chance to work in a startup environment, where I worked with experts in the field of web development, working on a large scale web based data analytics tool. I was tasked with both front and back end development, including interface design and feature development. I also had the chance to design and develop some of the product’s REST API end points.",
+            "I also had insight into product testing, agile development techniques and working collaboratively with team members."
+          ]
           at: true
         }
         {
@@ -73,7 +79,10 @@ class AboutController extends Controller
           description: "Research in Multi-agent Systems"
           subtext: "School of Computer Science, University College Dublin"
           date: "Summer 2011"
-          details: ["I was involved in a team of lecturers and post graduates developing several strategies for a multi agent programming competition. I had the chance to learn a lot about the multi-agent systems, how these systems work and how to improve existing strategies. I also had the chance to develop different strategies based on my ideas. The team published a paper, detailing the proceedings of the project."]
+          details: [
+            "I was involved in a team of lecturers and post graduates developing several strategies for a multi agent programming competition. I had the chance to learn a lot about the multi-agent systems, how these systems work and how to improve existing strategies.", 
+            "I also had the chance to develop different strategies based on my ideas. The team published a paper, detailing the proceedings of the project."
+          ]
           at: true
         }
       ]
@@ -132,7 +141,7 @@ class AboutController extends Controller
           description: "Team BSD"
           subtext: "North-Western European Regional Programming Competition 2012"
           date: "November 2012"
-          details: ["Did stuff..."]
+          details: ["Participated in the regional competition, held in the Netherlands, along with two other team members."]
         }
         {
           id: "achievements_ucdsci"
@@ -140,7 +149,7 @@ class AboutController extends Controller
           description: ""
           subtext: "UCD SCI Programming Competition"
           date: "March 2012"
-          details: ["Did stuff..."]
+          details: ["A day long programming competition where I competed using Ruby."]
         }
       ]
     }
