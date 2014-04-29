@@ -1,0 +1,51 @@
+
+{{> header}}
+
+{{#each projects}}
+<div id="project-{{id}}" class="entry" data-tags="{{skillstotags skills}}">
+	{{#if image}}
+	<div style="background-clip: padding-box;overflow:hidden;">
+		<div class="blurred" style="background-image:url('/static/{{image}}')">
+		</div>
+	</div>
+	{{/if}}
+	<div class="eli_section{{#if inverse}} inverse{{/if}}" style="z-index:100">
+	    <div class="container jumbotron eduwork">
+	    	<div>
+				<p class="eduwork-title">
+					<{{#if link}}a target="_new"{{/if}}{{#unless link}}span{{/unless}} class="thicker-text"{{#if link}} href="{{link}}"{{/if}}>{{name}}</{{#if link}}a{{/if}}{{#unless link}}span{{/unless}}>
+	                {{description}}
+	                <small style="position:absolute;right:0px;top:2px">{{date}}</small>
+	            </p>
+	            {{#if subtext}}
+	            <p class="eduwork-subtext"><em><small>{{#if at}}@{{/if}}{{subtext}}</small></em></p>
+	            {{/if}}
+	         </div>
+	         <div class="project-body notsmall">
+	            {{#each details}}
+	            	<p>{{.}}</p>
+	            {{/each}}
+	            {{#if skills}}
+	            <br>
+	            <p><span class="thicker-text">Skills and technologies involved: </span>
+	            {{#each skills}} 
+	            	<a class="tag" href="?filter={{.}}">{{.}}</a>
+	            {{/each}}
+	            {{/if}}
+	            </p>
+	         </div>
+	    </div>
+	</div>
+</div>
+{{/each}}
+
+<div id="page-affix" data-spy="affix">
+    <ul class="nav">
+    	{{#each projects}}
+    		<li><a href="#project-{{id}}">{{name}}</a></li>
+    	{{/each}}
+    </ul>
+</div>
+
+
+

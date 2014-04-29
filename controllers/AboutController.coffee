@@ -7,6 +7,7 @@ class AboutController extends Controller
     @model = new AboutModel()
 
   _get: (req, res) =>
+    @model.setBody "About"
     @_renderPage res
 
 module.exports = AboutController

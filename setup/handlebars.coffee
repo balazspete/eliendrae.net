@@ -49,12 +49,9 @@ hbs.registerHelper "eduwork", (data) ->
     for detail in element.details or ['<em>No additional information</em>']
       content += """<p>#{detail}</p>"""
     if element.skills
-      content += '<br><p><strong>Skills earned:</strong>&nbsp;'
-      count = 0
+      content += '<br><p><span class=\"thicker-text\">Skills earned:</span>&nbsp;'
       for skill in element.skills
-        content += ', ' if count > 0
-        content += "<span>#{skill}</span>"
-        count += 1
+        content += "<span class=\"tag\">#{skill}</span>"
       content += '</p>'
     content += """</div></div>
       </div>"""
@@ -63,4 +60,7 @@ hbs.registerHelper "eduwork", (data) ->
 
 hbs.registerHelper "filterquery", (data) ->
   querystring.stringify {filter: data}
+
+hbs.registerHelper "skillstotags", (data) ->
+  data.join(':').toLowerCase()
 

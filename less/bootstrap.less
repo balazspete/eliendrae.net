@@ -127,7 +127,7 @@ span, a {
 	}
 }
 
-.eduwork.collapsible {
+.eduwork {
 	p.eduwork-title, p.eduwork-subtext {
 		padding: 0px;
 		margin: 0px;
@@ -135,9 +135,7 @@ span, a {
 	}
 
 	p.eduwork-title {
-		small {
-			font-weight: 200;
-		}
+		font-weight: 100;
 	}
 
 	p.eduwork-subtext {
@@ -145,24 +143,34 @@ span, a {
 		height:0.8em;
 		font-weight: 100;
 	}
-
-	div.eduwork-body {
+	
+	div.eduwork-body, div.project-body  {
 		margin: 10px;
 		padding: 15px;
-		font-size: 0.7em;
 		border-left: 1px solid @section-text-color;	
-		text-align: justify;	
+		text-align: justify;
+		font-size: 0.7em;
 	}
 
-	margin-bottom: 15px;
+	&.collapsible {
+		margin-bottom: 15px;
+	}
 }
 
 .eli_section.inverse .eduwork.collapsible div.eduwork-body {
 	border-left-color: @section-inverse-text-color;
 }
 
+.eli_section.inverse div.project-body {
+	border-left-color: @section-inverse-text-color;
+}
+
 .thicker-text {
 	font-weight: 400;
+}
+
+.lighter-text {
+	font-weight: 100;
 }
 
 #page-affix {
@@ -215,6 +223,45 @@ span, a {
 	top: 100px;
 	left: 10px;
 	width: 20px;
+}
+
+@blur-radius: 4px;
+@blur-opacity: 0.95;
+.blurred {
+	display:block;
+	margin: 0;
+	padding: 0;
+
+	//&:not(:hover) {
+		-webkit-filter: blur(@blur-radius);
+  		-moz-filter: blur(@blur-radius);
+		-o-filter: blur(@blur-radius);
+		-ms-filter: blur(@blur-radius);
+		filter: blur(@blur-radius);
+		opacity: @blur-opacity; 
+	//}
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+
+	height:150px;
+	margin:-1px;
+	padding:1px;
+
+}
+
+
+.tag {
+	font-weight: 200;
+	&:not(:last-child) {
+		&:after {
+			content: ', ';
+		}
+	}
+	&:last-child:before {
+		content: 'and '
+	}
 }
 
 
