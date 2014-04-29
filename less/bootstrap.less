@@ -1,4 +1,11 @@
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700,400italic,100italic,700italic,300,300italic);
+
+* {
+	font-family: 'Helvetica Neue', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+	font-weight: 300;
+}
+
 @navbar-color: #34495E;
 @navbar-link-color-brand: #F2F1EF;
 @navbar-link-color-active: #F2F1EF;
@@ -9,6 +16,9 @@
 
 @section-text-color: #333333;
 @section-inverse-text-color: #BFBFBF;
+
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
 
 body {
 	background: @background;
@@ -152,8 +162,29 @@ span, a {
 		font-size: 0.7em;
 	}
 
+	.eduwork-date {
+		position: absolute;
+		right: 0px;
+		top: 2px;
+	}
+
 	&.collapsible {
 		margin-bottom: 15px;
+	}
+
+	@media (max-width: @screen-sm-min) { 
+		& {
+			padding-top: 25px;
+		}
+
+		.eduwork-date {
+			left: 0px;
+			top: -20px;
+			font-size: 0.7em;		}
+
+		p.eduwork-subtext {
+			font-size: 0.8em;
+		}
 	}
 }
 
@@ -174,6 +205,7 @@ span, a {
 }
 
 #page-affix {
+	visibility: hidden;
 	ul {
 		list-style: none;
 		margin: 0px;
@@ -225,6 +257,12 @@ span, a {
 	width: 20px;
 }
 
+@media (min-width: @screen-md-min) { 
+	#page-affix {
+		visibility: visible;
+	}
+}
+
 @blur-radius: 4px;
 @blur-opacity: 0.95;
 .blurred {
@@ -251,9 +289,8 @@ span, a {
 
 }
 
-
 .tag {
-	font-weight: 200;
+	font-weight: 300;
 	&:not(:last-child) {
 		&:after {
 			content: ', ';

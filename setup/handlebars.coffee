@@ -41,7 +41,7 @@ hbs.registerHelper "eduwork", (data) ->
             <a data-toggle="collapse" data-parent="##{data.section}" href="##{element.id}">
                 <p class="eduwork-title"><span class="thicker-text">#{element.title}</span>
                 #{element.description}
-                <small style="position:absolute;right:0px;top:2px">#{element.date}</small></p>
+                <small class="eduwork-date">#{element.date}</small></p>
                 <p class="eduwork-subtext"><em><small>#{if element.at then "@" else ""}#{element.subtext}</small></em></p>
             </a>
         </div>
