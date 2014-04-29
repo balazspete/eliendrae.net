@@ -1,0 +1,45 @@
+
+{{> header}}
+
+<div id="name" class="eli_section inverse">
+    <div class="container jumbotron centered">
+        <div>
+            <img class="profile-image main" src="/static/profile-image.png">
+        </div>
+        <h3>Balázs Pete <p><small>@eliendrae</small></p></h3> 
+    </div>
+</div>
+<div id="descripton" class="eli_section">
+    <div class="container jumbotron">
+		<h3>Hi there!</h3>
+		<p>You may download alternative versions of my resume on this site. The files are hosted on Dropbox and may have been modified since your last visit!</p>
+	</div>
+</div>
+<div id="downloads" class="eli_section inverse">
+    <div class="container jumbotron">
+		<h3>Downloads</h3>
+		{{#each files}}
+			<div class="eduwork">
+				<div id="download-{{id}}">
+					<p class="eduwork-title">
+						<a target="_new" href="{{link}}" class="thicker-text">{{name}}</a>
+		                {{description}}
+		            </p>
+		         </div>
+		         <div class="project-body notsmall">
+		            {{#each details}}
+		            	<p>{{.}}</p>
+		            {{/each}}
+		         </div>
+	         </div>
+		{{/each}}
+	</div>
+</div>
+<div id="why" class="eli_section">
+    <div class="container jumbotron">
+		<h3>Why?</h3>
+		<p></p>
+	</div>
+</div>
+
+
