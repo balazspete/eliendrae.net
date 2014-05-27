@@ -13,7 +13,7 @@ class AboutCVController extends Controller
         id: 'cv-full-design'
         name: 'Resume/Curriculum Vitae'
         description: 'original version'
-        link: 'https://dl.dropbox.com/s/oht3ntkfiac78lt/CV.pdf'
+        link: 'https://dl.dropbox.com/s/wvmfynurc2jt9ss/CV.pdf'
         details: [
           'An interactive version, mimicking the design of the website. Contains links to more details on the website.'
         ]
@@ -22,7 +22,7 @@ class AboutCVController extends Controller
         id: 'cv-full-design-plain'
         name: 'Resume/Curriculum Vitae'
         description: 'printer friendly version'
-        link: 'https://dl.dropboxusercontent.com/s/rujphjmpd4fj9os/CVplain.pdf'
+        link: 'https://dl.dropbox.com/s/apghckirfn6u7nl/CVplain.pdf'
         details: [
           'An interactive version, with colours removed. Contains links to more details on the website.'
         ]
