@@ -14,23 +14,12 @@ class ProjectsModel extends Model
     @add "projects", [
       {
         id: "tcd-dissertation"
-        name: "Mobile Geographical Linked Data Visualisation"
+        name: "Usable Mobile Geographical Linked Data Visualisation"
         description: 'MSc dissertation'
         date: "Ongoing"
-        skills: ["Linked data", "SPARQL", "iOS"]
+        skills: ["Linked data", "SPARQL", "iOS", "Usability evaluation", "Information visualisation"]
         details: [
-          "A mobile application to use and discover geographical linked data visually"
-        ]
-      }
-      {
-        inverse: true
-        id: "rdf-visualiser"
-        link: "//github.com/balazspete/RDFVisualiser"
-        name: "RDFVisualiser"
-        date: "Ongoing"
-        skills: ['RDF', 'SPARQL', 'iOS']
-        details: [
-          "An iOS application to dereference, navigate, and visualise RDF resources"
+          "In this study, the usability of the visualisation of geographical Linked Data on a mobile device was investigated. A mobile application was developed through an iterative process where the development of later prototype iterations were guided by analysing the results of usability studies. After a paper-based study and three prototype iterations, this application was compared to a desktop-based Linked Data geographical visualisation. This work is important because the amount of available spatial Linked Data is growing every day and the need to visualise this information to help users understand it increases correspondingly. There has been less effort to date in mobile Linked Data research, and not many mobile applications focus on visualising geographical data.<br>The experiments showed that the usability of the mobile app was affected by the addition visual feedback, the increased number of features, the introduction of visual cues, and whether users preferred the mobile app over the desktop one. The results indicated that achieving equivalent usability to the desktop application on mobile is possible. These results show that both applications are suitable for the exploration of geographical Linked Data, however one application cannot fully replace the other as the suitability of an application ultimately depended on the user‚Äôs platform preferences.<br>The analysis of the results of the usability experiments enable readers to identify the main challenges to consider when designing a mobile Linked Data application. This is supported by the presented investigation of how different mobile and Linked Data visualisation challenges can apply to a tablet application. The findings of this study could help in making appropriate design decisions for future applications. However, it is important to note that the experiments have been carried out with a small number of participants and that more data would need to be gathered through user studies prior to making any final conclusions."
         ]
       }
       {
@@ -52,7 +41,7 @@ class ProjectsModel extends Model
         date: "2014"
         skills: ["Android", "Arduino", "BLE", "Java"]
         details: [
-          "A wearable fall detection system, focusing on developing a fully mobile and location independent approach that results in a reliable fall detection system that is comparable in performance to existing solutions, however it should be comfortable to use by its wearer and should be non-intrusive requiring very little attention." 
+          "A wearable fall detection system, focusing on developing a fully mobile and location independent approach that results in a reliable fall detection system that is comparable in performance to existing solutions, however it should be comfortable to use by its wearer and should be non-intrusive requiring very little attention."
           "Based on mainstream platforms to aim to reduce costs and investigate whether good performance is achievable."
         ]
       }
@@ -64,7 +53,7 @@ class ProjectsModel extends Model
         date: "2014"
         skills: ["iOS", "Node.js", "OpenCV"]
         details: [
-          "A system that is capable to draw in and organise external resources for students, such as the white-board or the student's notes and intelligently link them to online resources such as lecture slides. In addition, the system offers real time in-class collaboration between students." 
+          "A system that is capable to draw in and organise external resources for students, such as the white-board or the student's notes and intelligently link them to online resources such as lecture slides. In addition, the system offers real time in-class collaboration between students."
           "Targeted for iPads (with the possibility to expand to other platforms), includes use of OpenCV, machine learning, and web based services."
         ]
       }
@@ -137,5 +126,3 @@ class ProjectsModel extends Model
 
 
 module.exports = ProjectsModel
-
-
