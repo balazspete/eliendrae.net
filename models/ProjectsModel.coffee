@@ -13,17 +13,17 @@ class ProjectsModel extends Model
 
     @add "projects", [
       {
+        inverse: true
         id: "tcd-dissertation"
         name: "Usable Mobile Geographical Linked Data Visualisation"
         description: 'MSc dissertation'
-        date: "Ongoing"
+        date: "2014"
         skills: ["Linked data", "SPARQL", "iOS", "Usability evaluation", "Information visualisation"]
         details: [
-          "In this study, the usability of the visualisation of geographical Linked Data on a mobile device was investigated. A mobile application was developed through an iterative process where the development of later prototype iterations were guided by analysing the results of usability studies. After a paper-based study and three prototype iterations, this application was compared to a desktop-based Linked Data geographical visualisation. This work is important because the amount of available spatial Linked Data is growing every day and the need to visualise this information to help users understand it increases correspondingly. There has been less effort to date in mobile Linked Data research, and not many mobile applications focus on visualising geographical data.
-
-          The experiments showed that the usability of the mobile app was affected by the addition visual feedback, the increased number of features, the introduction of visual cues, and whether users preferred the mobile app over the desktop one. The results indicated that achieving equivalent usability to the desktop application on mobile is possible. These results show that both applications are suitable for the exploration of geographical Linked Data, however one application cannot fully replace the other as the suitability of an application ultimately depended on the user‚Äôs platform preferences.
-
-          The analysis of the results of the usability experiments enable readers to identify the main challenges to consider when designing a mobile Linked Data application. This is supported by the presented investigation of how different mobile and Linked Data visualisation challenges can apply to a tablet application. The findings of this study could help in making appropriate design decisions for future applications. However, it is important to note that the experiments have been carried out with a small number of participants and that more data would need to be gathered through user studies prior to making any final conclusions."
+          "Applications: PVGeoVisualisation, PVGeoVisualisation mobile"
+          "In this study, the usability of the visualisation of geographical Linked Data on a mobile device was investigated. A mobile application was developed through an iterative process where the development of later prototype iterations were guided by analysing the results of usability studies. After a paper-based study and three prototype iterations, this application was compared to a desktop-based Linked Data geographical visualisation. This work is important because the amount of available spatial Linked Data is growing every day and the need to visualise this information to help users understand it increases correspondingly. There has been less effort to date in mobile Linked Data research, and not many mobile applications focus on visualising geographical data."
+          "The experiments showed that the usability of the mobile app was affected by the addition visual feedback, the increased number of features, the introduction of visual cues, and whether users preferred the mobile app over the desktop one. The results indicated that achieving equivalent usability to the desktop application on mobile is possible. These results show that both applications are suitable for the exploration of geographical Linked Data, however one application cannot fully replace the other as the suitability of an application ultimately depended on the user‚Äôs platform preferences."
+          "The analysis of the results of the usability experiments enable readers to identify the main challenges to consider when designing a mobile Linked Data application. This is supported by the presented investigation of how different mobile and Linked Data visualisation challenges can apply to a tablet application. The findings of this study could help in making appropriate design decisions for future applications. However, it is important to note that the experiments have been carried out with a small number of participants and that more data would need to be gathered through user studies prior to making any final conclusions."
         ]
       }
       {
@@ -31,7 +31,7 @@ class ProjectsModel extends Model
         name: "eliendrae.net"
         description: "personal website"
         link: "//github.com/balazspete/eliendrae.net"
-        date: "Ongoing"
+        date: "2014"
         skills: ['Web development', 'HTML', 'LESS', 'CSS', 'JavaScript', 'Node.js', 'CoffeeScript', 'Handlebars.js', 'jQuery']
         details: [
           "Redesigned my personal website with a direction towards minimalistic UI design"
