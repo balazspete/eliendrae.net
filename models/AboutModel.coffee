@@ -51,6 +51,16 @@ class AboutModel extends Model
       section: "experience"
       structure: [
         {
+	  id: "sap-dev-bi-aa"
+	  title: "Developer"
+	  description: "Advanced Analysics (BI) team"
+	  subtext: "SAP Business Objects Ltd, SAP AppHaus, Dublin, Ireland"
+	  date: "Current"
+	  details: [
+	    "Part of the integration team responsible to bringing advanced analytics features to different SAP products"
+	  ]	
+	}
+	{
           id: "experience_sf2013"
           title: "Intern"
           description: "Software Development Engineer"

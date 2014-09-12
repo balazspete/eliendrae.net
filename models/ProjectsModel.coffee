@@ -13,6 +13,15 @@ class ProjectsModel extends Model
 
     @add "projects", [
       {
+        id: "evoco"
+        name: "evoco"
+        description: 'Rediscover your timeline'
+        date: "2014"
+        skills: ["iOS", "Facebook iOS SDK"]
+        details: [
+        ]
+      }
+      {
         inverse: true
         id: "tcd-dissertation"
         name: "Usable Mobile Geographical Linked Data Visualisation"
