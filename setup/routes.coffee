@@ -5,7 +5,6 @@ getController = (name) ->
   controller = require "#{__dirname}/../controllers/#{name}Controller"
   new controller()
 
-
 app.use(lessMiddleware "/less", {
   dest: "/css"
   pathRoot: "#{__dirname}/../"
@@ -13,7 +12,6 @@ app.use(lessMiddleware "/less", {
   force: true
 })
 
-console.log os.hostname()
 if os.hostname() == 'get-around-dublin.eliendrae.net'
   app.use '/', express.static(__dirname + '/../get-around-dublin')
 else
@@ -28,4 +26,4 @@ else
 
   app.get '/policies', getController("Policy").get
 
-  app.use getController("Error").get
+app.use getController("Error").get
