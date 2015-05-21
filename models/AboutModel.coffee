@@ -51,16 +51,17 @@ class AboutModel extends Model
       section: "experience"
       structure: [
         {
-	  id: "sap-dev-bi-aa"
-	  title: "Developer"
-	  description: "Advanced Analysics (BI) team"
-	  subtext: "SAP Business Objects Ltd, SAP AppHaus, Dublin, Ireland"
-	  date: "Current"
-	  details: [
-	    "Part of the integration team responsible to bringing advanced analytics features to different SAP products"
-	  ]	
-	}
-	{
+	        id: "sap-dev-bi-aa"
+          title: "Developer"
+          description: "Advanced Analysics Line of Business Apps Integration team"
+          subtext: "SAP Business Objects, SAP AppHaus, Dublin, Ireland"
+          date: "Current"
+          details: [
+	           "I am part of the team responsible for embedding Advanced Analytics and predictive capabilities to different SAP line of business products.",
+             "In addition to assisting teams in finding out what and developing the best integration solution for their application, we are developing utilities that facilitate these integration tasks, such as simplified APIs and tools, along with other unified solutions to the management of predictive scenarios that are available right within SAP HANA. The ultimate goal is to make SAP's predictive functionality seamlessly available to the end business user."
+	        ]
+      	}
+      	{
           id: "experience_sf2013"
           title: "Intern"
           description: "Software Development Engineer"
@@ -91,7 +92,7 @@ class AboutModel extends Model
           subtext: "School of Computer Science, University College Dublin"
           date: "Summer 2011"
           details: [
-            "I was involved in a team of lecturers and post graduates developing several strategies for a multi agent programming competition. I had the chance to learn a lot about the multi-agent systems, how these systems work and how to improve existing strategies.", 
+            "I was involved in a team of lecturers and post graduates developing several strategies for a multi agent programming competition. I had the chance to learn a lot about the multi-agent systems, how these systems work and how to improve existing strategies.",
             "I also had the chance to develop different strategies based on my ideas. The team published a paper, detailing the proceedings of the project."
           ]
           at: true
@@ -171,55 +172,35 @@ class AboutModel extends Model
     @add "skills", {
       section: "skills"
       structure: [
-        { name: "Java", class: "big" }
-        { name: "Ruby", class: "big" }
         { name: "JavaScript", class: "big" }
+        { name: "Swift", class: "big" }
+        { name: "Java", class: "big" }
+        { name: "Ruby", class: "medium" }
         { name: "CoffeeScript", class: "medium" }
         { name: "Objective-C", class: "medium" }
         { name: "C++", class: "medium" }
-        { name: "C", class: "medium" }
-        { name: "C#", class: "medium" }
-        { name: "PHP", class: "small" }
-        { name: "Processing", class: "small" }
         { name: "Shell", class: "small" }
-        { name: "Bash", class: "small" }
         { name: "iOS", class: "big" }
         { name: "Android", class: "big" }
-        { name: "ARM Assembly", class: "small" }
-        { name: "HTML", class: "big" }
+        { name: "HTML", class: "medium" }
         { name: "CSS", class: "big" }
-        { name: "jQuery", class: "medium" }
         { name: "Node.js", class: "big" }
-        { name: "LESS", class: "medium" }
         { name: "Arduino", class: "medium" }
-        { name: "ARM", class: "small" }
-        { name: "OpenCV", class: "medium" }
+        { name: "Software Development", class: "big" }
         { name: "Git", class: "big" }
-        { name: "Mercurial", class: "small" }
-        { name: "Subversion", class: "small" }
-        { name: "MySQL", class: "medium" }
         { name: "NoSQL", class: "medium" }
-        { name: "Object Oriented Design", class: "big" }
-        { name: "OpenGL", class: "small" }
-        { name: "Jasmine", class: "small" }
-        { name: "jUnit", class: "small" }
-        { name: "UI and UX design", class: "big" }
-        { name: "Moustache templating", class: "small" }
-        { name: "Linked data", class: "medium" }
-        { name: "SPARQL", class: "big" }
+        { name: "SAP HANA", class: "big" }
+        { name: "Object Oriented Design", class: "medium" }
+        { name: "Linked data", class: "small" }
+        { name: "jQuery", class: "medium" }
+        { name: "SPARQL", class: "small" }
         { name: "Embedded Systems", class: "medium" }
         { name: "Web development", class: "big" }
         { name: "Agile development", class: "medium" }
         { name: "Scrum", class: "medium" }
-        { name: "XP", class: "small" }
         { name: "Test-driven development", class: "small" }
-        { name: "LaTeX", class: "small" }
-        { name: "WebSockets", class: "medium" }
-        { name: "BLE", class: "small" }  
         { name: "Machine learning", class: "medium" }
       ]
     }
 
 module.exports = AboutModel
-
-

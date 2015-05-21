@@ -13,12 +13,18 @@ class ProjectsModel extends Model
 
     @add "projects", [
       {
-        id: "evoco"
-        name: "evoco"
-        description: 'Rediscover your timeline'
-        date: "2014"
-        skills: ["iOS", "Facebook iOS SDK"]
+        id: "get-around-dublin"
+        name: "Get Around Dublin"
+        description: 'Get around your city'
+        link: "//get-around-dublin.eliendrae.net"
+        date: "2015"
+        skills: ["iOS", "Swift"]
         details: [
+          "Get Around Dublin is an application that aims to solve the comon problems with real time transport information applications. Most of the alternatives, especially for dublin, have bad user experience, they are slow, and not intuitive to use. They do not consider the main use-case of such application..."
+          "I don't neessarily know the ID of my bus stop, nor its name. This is worse if I'm around a less frequently encountered area. Get Around Dublin shows contextual information regarding Dublin's public transport, allowing access to the information that most people would care about with little effort on the users."
+          "Get Around Dublin also aims to help its users to know where they are travelling to or how to get where they want to, without requiring to know a destination addredd or name. The application indicates which direction a bus is headed to (Noth, South, etc..) and where the closest stops per direction are. In addition turn-by-turn navigation is available to a bus stop."
+          "The application aims to be fast and responsive, aiming to reduce users' frustration with a transport application."
+          "Planned features include support for additional services, performance improvements, and solutions to suggest transport information as well as aim to be a companion app for people living in Dublin: suggest events, nearby attractions or things to do when you are bored..."
         ]
       }
       {
