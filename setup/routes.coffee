@@ -12,6 +12,10 @@ app.use(lessMiddleware "/less", {
   force: true
 })
 
+console.log '************************************************'
+console.log 'Domain: ', os.hostname()
+console.log '************************************************'
+
 if os.hostname() == 'get-around-dublin.eliendrae.net'
   app.use '/', express.static(__dirname + '/../get-around-dublin')
 else

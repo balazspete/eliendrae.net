@@ -15,7 +15,7 @@ class ProjectsModel extends Model
       {
         id: "get-around-dublin"
         name: "Get Around Dublin"
-        description: 'Get around your city'
+        description: 'Discover your city'
         link: "//get-around-dublin.eliendrae.net"
         date: "2015"
         skills: ["iOS", "Swift"]
