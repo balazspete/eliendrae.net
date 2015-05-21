@@ -1,4 +1,4 @@
-
+os = require 'os'
 lessMiddleware = require 'less-middleware'
 
 getController = (name) ->
@@ -13,7 +13,8 @@ app.use(lessMiddleware "/less", {
   force: true
 })
 
-if req.subdomains[0] == 'get-around-dublin'
+console.log os.hostname()
+if os.hostname() == 'get-around-dublin.eliendrae.net'
   app.use '/', express.static(__dirname + '/../get-around-dublin')
 else
   app.use '/css', express.static(__dirname + '/../css')
