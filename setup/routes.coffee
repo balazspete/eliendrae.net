@@ -1,11 +1,11 @@
-os = require 'os'
+subdomain = require 'express-subdomain'
 lessMiddleware = require 'less-middleware'
 
 getController = (name) ->
   controller = require "#{__dirname}/../controllers/#{name}Controller"
   new controller()
 
-app.use express.vhost('get-around-dublin.eliendrae.net', express.static('/get-around-dublin'))
+app.use subdomain('get-around-dublin', express.static(__dirname + '/../get-around-dublin'))
 
 app.use(lessMiddleware "/less", {
   dest: "/css"

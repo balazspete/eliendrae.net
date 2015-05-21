@@ -8,7 +8,8 @@
         "hbs": "2.3.x",
         "underscore": "1.5.x",
         "underscore.string": "2.3.x",
-        "less-middleware": "x"
+        "less-middleware": "x",
+        "express-subdomain": "1.x"
     },
     "engines": {
         "node": "0.10.x"
