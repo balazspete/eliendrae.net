@@ -34,9 +34,9 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <p class="lead" ><img class="featurette-image img-responsive center-block" src="Images/iPad-and-iPhone.png" alt="Favourites and Nearby stops"></p>
-        <h1 id="title">Get Around Dublin</h1>
+        <h1 class="title">Get Around Dublin</h1>
         <p style="position:relative">
-          <div id="download-button" style="width: 100%; height: 40px; position: absolute; z-index: 1;"></div>
+          <div class="download-button" style="width: 100%; height: 40px; position: absolute; z-index: 1;"></div>
           <object data="Images/AppStore.svg" type="image/svg+xml">
             <span class="btn btn-lg btn-success" role="button">Download it now</span>
           </object>
@@ -117,6 +117,20 @@
           <p>Prefer Apple Maps over Google's? No problem... It's all up to you!</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
+      <div class="row container header">
+        <div class="jumbotron">
+          <p class="lead" ><img class="featurette-image img-responsive center-block" src="Images/iPad-and-iPhone.png" alt="Favourites and Nearby stops" style="height: 200px"></p>
+          <h1 class="title">Get Around Dublin</h1>
+          <p style="position:relative">
+            <div class="download-button" style="width: 100%; height: 40px; position: absolute; z-index: 1;"></div>
+            <object data="Images/AppStore.svg" type="image/svg+xml">
+              <span class="btn btn-lg btn-success" role="button">Download it now</span>
+            </object>
+          </p>
+        </div>
+      </div>
+
+
 
       <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -144,7 +158,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      $('#download-button').on('click', function(e) {
+      $('.download-button').on('click', function(e) {
         window.location = '#';
       })
     </script>

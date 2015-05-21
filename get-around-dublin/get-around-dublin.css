@@ -61,9 +61,9 @@ footer a {
   background-color: #D35400;
 }
 
-#title {
+.title {
   margin-top: 50px;
-  color: white;
+  color: white !important;
 }
 
 .container.header {
